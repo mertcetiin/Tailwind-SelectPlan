@@ -1,7 +1,13 @@
 import './App.css'
+import { useState } from 'react';
 
 function App() {
 
+  const [planSelected, setPlanSelected] = useState('monthly');
+
+  const handleSelect = (planType) => {
+    setPlanSelected(planType)
+  }
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">
@@ -10,8 +16,8 @@ function App() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
           <div className="flex mx-auto border-2 border-purple-500 rounded overflow-hidden mt-6">
-            <button className="py-1 px-4 bg-purple-500 text-white focus:outline-none">Monthly</button>
-            <button className="py-1 px-4 focus:outline-none">Annually</button>
+            <button onClick={() => handleSelect('monthly')} className={`py-1 px-4 bg-purple-500 text-white focus:outline-none ${planSelected === 'yearly' ? 'bg-white text-black' : ''}`}>Monthly</button>
+            <button onClick={() => handleSelect('yearly')} className={`py-1 px-4 focus:outline-none ${planSelected === 'yearly' ? 'bg-purple-500 text-white' : ''}`}>Yearly</button>
           </div>
         </div>
         <div className="flex flex-wrap -m-4">
