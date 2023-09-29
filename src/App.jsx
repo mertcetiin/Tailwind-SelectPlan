@@ -14,8 +14,13 @@ function App() {
   }
 
   const [planMonthly, setPlanMonthly] = useState(monthlyPlan);
-  const [planYearly, setPlanYearly] = useState(yearlyPlan)
+  const [planYearly, setPlanYearly] = useState(yearlyPlan);
 
+  const [plan, setPlan] = useState(true)
+
+  const handleSelectPlan = () => {
+    setPlan(!plan)
+  }
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">
@@ -29,7 +34,7 @@ function App() {
           </div>
         </div>
 
-        {planSelected === 'monthly' ? <Monthly planMonthly={planMonthly} /> : <Yearly planYearly={planYearly} />}
+        {planSelected === 'monthly' ? <Monthly plan={plan} handleSelectPlan={handleSelectPlan} planMonthly={planMonthly} /> : <Yearly planYearly={planYearly} />}
 
       </div>
     </section>
