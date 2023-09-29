@@ -20,7 +20,7 @@ export const monthlyPlan = [
 export const yearlyPlan = [
     {
         id: 1,
-        price: 'mert',
+        price: 'Free',
     },
     {
         id: 2,
