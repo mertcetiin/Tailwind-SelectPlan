@@ -18,8 +18,14 @@ function App() {
 
   const [plan, setPlan] = useState(true)
 
-  const handleSelectPlan = () => {
-    setPlan(!plan)
+  const handleSelectPlan = (id) => {
+
+    const isSelected = plan === id
+
+    if (!isSelected) {
+      setPlan(id)
+    }
+
   }
 
   return (
