@@ -1,8 +1,33 @@
-# React + Vite
+# React + Vite + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Select Plan
 
-Currently, two official plugins are available:
+My first project with tailwin. Monthly and annual plans can be selected, color changes depending on which plan is selected.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Screenshot
+
+![image](https://github.com/mertcetiin/Tailwind-SelectPlan/assets/102957602/1cb7dee5-3be4-4959-8932-54b025452767)
+
+![image](https://github.com/mertcetiin/Tailwind-SelectPlan/assets/102957602/3b6c3995-ab38-46e1-ab5a-ce7884536448)
+
+
+## Project Link
+
+[Live Demo](https://tailwind-select-plan.vercel.app)
+
+
+### Installation
+
+1. Clone this repository or download it as a ZIP:
+
+   ```bash
+   cd Desktop/SelectPlan
+   git clone https://github.com/mertcetiin/Tailwind-SelectPlan.git
+
+2. Install dependencies and start the development server:
+
+   ```bash
+   npm create vite@latest .
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   npm run dev
