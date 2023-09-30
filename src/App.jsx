@@ -35,7 +35,7 @@ function App() {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Select Plan</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <div className="flex mx-auto border-2 border-purple-500 rounded overflow-hidden mt-6">
             <button onClick={() => handleSelect('monthly')} className={`py-1 px-4 focus:outline-none ${planSelected === 'monthly' ? 'bg-purple-500 text-white' : 'bg-white text-black'}`}>Monthly</button>
             <button onClick={() => handleSelect('yearly')} className={`py-1 px-4 focus:outline-none ${planSelected === 'yearly' ? 'bg-purple-500 text-white' : 'bg-white text-black'}`}>Yearly</button>

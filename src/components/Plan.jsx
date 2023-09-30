@@ -1,40 +1,45 @@
 export const monthlyPlan = [
     {
         id: 1,
+        name: 'START',
         price: 'Free',
     },
     {
         id: 2,
-        price: '$38',
-        info: 'Lorem ipsum dolar lorem',
+        name: 'PRO',
+        price: '$24',
     },
     {
         id: 3,
-        price: '$56',
-        info: 'Lorem ipsum dolar lorem',
+        name: 'BUSINESS',
+        price: '$48',
     },
     {
         id: 4,
-        price: '$72',
-        info: 'Lorem ipsum dolar lorem',
+        name: 'SPECIAL',
+        price: '$78',
     }
 ]
 
 export const yearlyPlan = [
     {
         id: 1,
+        name: 'START',
         price: 'Free',
     },
     {
         id: 2,
-        price: '$100',
+        name: 'PRO',
+        price: '$320',
     },
     {
         id: 3,
-        price: '$250',
+        name: 'BUSINESS',
+        price: '$680',
     },
     {
         id: 4,
-        price: '$300',
+        name: 'SPECIAL',
+        price: '$900',
     }
 ]
