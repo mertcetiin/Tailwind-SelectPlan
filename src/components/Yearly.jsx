@@ -13,21 +13,21 @@ function Yearly({ planYearly, handleSelectPlan, plan }) {
                             <h2 className="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
                             <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{item.price}</h1>
                             <p className="flex items-center text-gray-600 mb-2">
-                                <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <span className={`w-4 h-4 mr-2 inline-flex items-center justify-center  ${plan === item.id ? 'bg-green-600' : 'bg-gray-400'} text-white rounded-full flex-shrink-0`}>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>Vexillologist pitchfork
                             </p>
                             <p className="flex items-center text-gray-600 mb-2">
-                                <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <span className={`w-4 h-4 mr-2 inline-flex items-center justify-center  ${plan === item.id ? 'bg-green-600' : 'bg-gray-400'} text-white rounded-full flex-shrink-0`}>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>Tumeric plaid portland
                             </p>
                             <p className="flex items-center text-gray-600 mb-6">
-                                <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                                <span className={`w-4 h-4 mr-2 inline-flex items-center justify-center  ${plan === item.id ? 'bg-green-600' : 'bg-gray-400'} text-white rounded-full flex-shrink-0`}>
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" className="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
