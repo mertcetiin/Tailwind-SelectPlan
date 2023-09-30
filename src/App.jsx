@@ -28,6 +28,8 @@ function App() {
 
   }
 
+
+
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
@@ -40,7 +42,7 @@ function App() {
           </div>
         </div>
 
-        {planSelected === 'monthly' ? <Monthly plan={plan} handleSelectPlan={handleSelectPlan} planMonthly={planMonthly} /> : <Yearly planYearly={planYearly} />}
+        {planSelected === 'monthly' ? <Monthly plan={plan} handleSelectPlan={handleSelectPlan} planMonthly={planMonthly} /> : <Yearly planYearly={planYearly} plan={plan} handleSelectPlan={handleSelectPlan} />}
 
       </div>
     </section>
