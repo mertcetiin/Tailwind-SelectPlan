@@ -6,14 +6,17 @@ export const monthlyPlan = [
     {
         id: 2,
         price: '$38',
+        info: 'Lorem ipsum dolar lorem',
     },
     {
         id: 3,
         price: '$56',
+        info: 'Lorem ipsum dolar lorem',
     },
     {
         id: 4,
         price: '$72',
+        info: 'Lorem ipsum dolar lorem',
     }
 ]
 
